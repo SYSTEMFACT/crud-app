@@ -9,7 +9,7 @@
     margin: 0.5rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s ease;
-    width: 250px;
+    width: 300px;
   }
   
   .user-card:hover {
@@ -43,6 +43,13 @@
   .user-email, .user-birthday {
     font-size: 0.9rem;
     color: #6a0dad;
+  }
+
+  .user-email {
+    word-break: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+    max-width: 100%;
   }
   
   .user-actions {

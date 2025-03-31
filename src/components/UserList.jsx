@@ -13,7 +13,11 @@ function UserList({ users, showEditModal, showDeleteConfirmation}) {
             />
       ))}
 
-      {users.length === 0 && <p className="no-users">No users found</p>}
+      {users.length === 0 && (
+        <div className="no-users-container">
+          <p className="no-users">No users found</p>
+        </div>
+      )}
     </div>
   )
 }

@@ -1,27 +1,78 @@
 .user-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1rem;
-    justify-items: center;
-    padding: 1rem;
-  }
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  justify-items: center;
+  padding: 1rem;
+  margin: 0 auto;
+  max-width: 1400px;
+}
 
-  .no-users {
-    text-align: center;
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #4a4a4a;
-    font-family: 'Poppins', sans-serif;
-    margin-top: 2rem;
-    padding: 1.5rem;
-    background-color: #e9d6ff;
-    border-radius: 16px;
-    border: 2px dashed #a785d9;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-    transition: transform 0.2s ease;
+.user-list > * {
+  margin: 0.5rem;
+  max-width: 100%;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.user-list p, .user-list span {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+}
+
+@media (max-width: 800px) {
+  .user-list {
+    gap: 0.75rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    padding: 0.5rem;
   }
-  
-  .no-users:hover {
-    transform: scale(1.02);
+  .user-list > * {
+    margin: 0.5rem auto;
+    max-width: 95%;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
   }
-  
+}
+
+@media (max-width: 500px) {
+  .user-list {
+    gap: 0.5rem;
+    grid-template-columns: 1fr;
+    padding: 0.25rem;
+  }
+  .user-list > * {
+    margin: 0.25rem auto;
+    max-width: 90%;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+}
+
+.no-users-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.no-users {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #4a4a4a;
+  font-family: 'Poppins', sans-serif;
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background-color: #e9d6ff;
+  border-radius: 16px;
+  border: 2px dashed #a785d9;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s ease;
+}
+
+.no-users:hover {
+  transform: scale(1.02);
+}
