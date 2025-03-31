@@ -1,0 +1,92 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #5a1d80;
+  color: white;
+  border-radius: 8px;
+  margin: 1rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.app-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.add-btn {
+  padding: 0.6rem 1.2rem;
+  background-color: #7a2da0;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-family: 'Poppins', sans-serif;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.add-btn:hover {
+  background-color: #6a268f;
+  transform: scale(1.05);
+}
+
+.delete-confirmation {
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  margin: 1rem;
+  padding: 1.5rem;
+  background-color: #f9f9f9;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.delete-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.confirm-btn, .cancel-btn, .ok-btn {
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  font-family: 'Poppins', sans-serif;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.confirm-btn {
+  background-color: #d9534f;
+  color: white;
+}
+
+.confirm-btn:hover {
+  background-color: #c9302c;
+  transform: scale(1.05);
+}
+
+.cancel-btn {
+  background-color: #5bc0de;
+  color: white;
+}
+
+.cancel-btn:hover {
+  background-color: #31b0d5;
+  transform: scale(1.05);
+}
+
+.ok-btn {
+  background-color: #5cb85c;
+  color: white;
+}
+
+.ok-btn:hover {
+  background-color: #4cae4c;
+  transform: scale(1.05);
+}
+
+
